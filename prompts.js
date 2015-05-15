@@ -2,8 +2,24 @@
 
 var fs = require('fs')
 module.exports = {
-  "language": prompt("Preferred language? 'coffee' or 'js'", "coffee", function (lang) {
-    return lang;
-  }),
-  "directory": process.cwd()
+  // 'directory': function (cb) {
+  //   var opts = this.opts;
+  //   if (opts[0]) {
+  //     cb(null, opts[0]);
+  //   } else {
+  //     cb(null, process.cwd());
+  //   }
+  // },
+  'language': function (cb) {
+    var opts = this.opts;
+    if (opts.coffee) {
+      cb(null, 'coffee');
+    } else if (opts.javascript) {
+      cb(null, 'javascript');
+    } else {
+      cb(null, prompt('Preferred language? "coffee" or "javascript"', 'coffee', function (lang) {
+        return lang;
+      }));
+    }
+  }
 }

@@ -9,6 +9,7 @@
   "author": "Philip Schatz <http://philschatz.com>",
   "license": "MIT",
   "dependencies": {
+    "cpy": "^3.1.0",
     "nomnom": "^1.8.1",
     "promzard": "^0.3.0"
   }
