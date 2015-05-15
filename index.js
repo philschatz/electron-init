@@ -23,7 +23,7 @@ var dest = process.cwd();
 var copyTemplate = function(name) {
   var src = path.join(__dirname, 'templates', name);
   cpy([src + '/*'], dest, function(err) {
-    console.log('Initialized!')
+    console.log('Initialized! run "electron ." to start this app')
   });
 };
 
@@ -33,6 +33,7 @@ promzard(inputFile, {opts: opts}, function (err, args) {
   // Copy all the files in the appropriate template dir
   switch (args.language) {
     case 'coffee':
+      console.log('Make sure to run "npm install" in this directory to get coffee-script')
       copyTemplate('coffee');
       break;
     case 'javascript':
