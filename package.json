@@ -1,11 +1,14 @@
 {
   "name": "electron-init",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "bin": {
+    "electron-init": "index.js"
+  }
   "author": "Philip Schatz <http://philschatz.com>",
   "license": "MIT",
   "dependencies": {
