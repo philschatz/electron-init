@@ -8,7 +8,7 @@
   },
   "bin": {
     "electron-init": "index.js"
-  }
+  },
   "author": "Philip Schatz <http://philschatz.com>",
   "license": "MIT",
   "dependencies": {
