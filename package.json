@@ -1,6 +1,6 @@
 {
   "name": "electron-init",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,6 +10,10 @@
     "electron-init": "index.js"
   },
   "author": "Philip Schatz <http://philschatz.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/philschatz/electron-init.git"
+  },
   "license": "MIT",
   "dependencies": {
     "cpy": "^3.1.0",
