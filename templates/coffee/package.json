@@ -6,7 +6,7 @@
     "coffee-script": "1.9"
   },
   "devDependencies": {
-    "electron-prebuilt": "^0.26"
+    "electron": "^1.7.9"
   },
   "scripts": {
     "start": "electron index.js"
