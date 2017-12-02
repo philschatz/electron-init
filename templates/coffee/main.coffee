@@ -1,11 +1,7 @@
-app = require('app')
-
 # Module to control application life.
-BrowserWindow = require('browser-window')
+{app, BrowserWindow} = require('electron')
 
 # Module to create native browser window.
-# Report crashes to our server.
-require('crash-reporter').start()
 
 # Keep a global reference of the window object, if you don't, the window will
 # be closed automatically when the javascript object is GCed.
@@ -25,7 +21,7 @@ app.on 'ready', ->
     height: 600
 
   # and load the index.html of the app.
-  mainWindow.loadUrl("file://#{__dirname}/index.html")
+  mainWindow.loadURL("file://#{__dirname}/index.html")
 
   # Emitted when the window is closed.
   mainWindow.on 'closed', ->
